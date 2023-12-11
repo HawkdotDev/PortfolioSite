@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    /* overflow-y: scroll; */
+}
+.main{
+    position: relative;
+    background-color: #FF5943;
+}
+nav{
+    /* position: sticky;
+    top: 20px; */
+    position: fixed;
+    height: 70px;
+    width: 75%;
+    border-radius: 50px 50px 50px 50px;
+    margin-top: 20px;  
+    /* calc(100vh - 70px - 20px); */
+    margin-left: 12.5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    font-weight: 500;       
+    background-color: rgba(91, 87, 88, 0.3);
+    padding: 0px 15px 0px 5px;
+    border: 1px solid #282828;
+    z-index: 69;
+}
+nav .home{
+    position: relative;
+    background-color: cornflowerblue;
+    width: 70px;
+    height: 70px;
+    transition: width 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid #282828;
+    overflow: hidden;
+}
+nav .home:hover{
+    width: 25%;
+    border-radius: 50px 50px 50px 50px;
+    border: 1px solid #282828;
+    overflow: hidden;
+}
+nav .home a{
+    position: absolute;
+    text-decoration: none;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+nav .home a:hover{
+    width: 100%;
+    border-radius: 50px 50px 50px 50px;
+    opacity: 1;
+}
+/* nav .home i{
+    background-color: aqua;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    opacity: 1;
+    transition: opacity 0.2s ease;
+}
+nav .home i:hover{
+    background-color: aqua;
+    width: 100%;
+    border-radius: 50px 50px 50px 50px;
+    opacity: 0;
+} */
+nav ul{
+    display: flex;
+    height: 65px;
+    width: 75%;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav ul li{
+    display: flex;
+    width: 60px;
+    height: 60px;
+    transition: width 0.2s ease;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 0.5px solid #282828;
+    background-color: bisque;
+}
+nav ul li:hover{
+    background-color: bisque;
+    overflow: hidden;
+    border: 0.5px solid #282828;
+    width: 25%;
+    border-radius: 50px 50px 50px 50px;
+}
+nav ul li a{
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: antiquewhite;
+    -webkit-text-stroke: 0.5px rgb(108, 108, 108);
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+}
+nav ul li a:hover{
+    color: rgb(108, 108, 108);
+    -webkit-text-stroke: 0.5px antiquewhite;
+    opacity: 1;
+}
+.pages{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-color: aquamarine;
+}
+.pages #home-section{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(186, 61, 61);
+    margin-top: 0;
+    padding: 2%;
+}
+.pages #home-section #profile{
+    background-color: burlywood;
+    width: 60%;
+    height: 100%;
+    opacity: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pages #about-section{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(38, 116, 72);
+    margin-top: 0;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.pages #about-section #profile{
+    background-color: burlywood;
+    width: 60%;
+    height: 100%;
+    opacity: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 38%;
+}
+.pages #works-section{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(117, 38, 159);
+}
+.pages #contact-section{
+    height: 100%;
+    width: 100%;
+    background-color: cornflowerblue;
+}
+.pages #footer{
+    height: 8%;
+    width: 100%;
+    background-color: rgb(26, 26, 26);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+::-webkit-scrollbar {
+    width: 5px;
+    background-color: rgb(98, 113, 140);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #0d0d0d;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #2f2f2f;
+}
+
